@@ -41,6 +41,9 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest",
+    "nbformat",
+    "nbclient",
+    "ipykernel",
     "black",
     "mypy",
     "build",
@@ -48,9 +51,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/LouisFreboeuf/circularity_lci"
-Repository = "https://github.com/LouisFreboeuf/circularity_lci"
-Issues = "https://github.com/LouisFreboeuf/circularity_lci/issues"
+Homepage = "https://github.com/LouisFreboeuf/circularityLCI"
+Repository = "https://github.com/LouisFreboeuf/circularityLCI"
+Issues = "https://github.com/LouisFreboeuf/circularityLCI/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
