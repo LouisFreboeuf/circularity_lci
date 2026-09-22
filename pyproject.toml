@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "circularitylci"
+version = "1.0.0"
+description = "A Python package for circularity and life cycle assessment (LCA) analysis built on Brightway2"
+readme = "readme.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    {name = "Louis Freboeuf", email = "louis.freboeuf@gmail.com"},
+]
+maintainers = [
+    {name = "Louis Freboeuf", email = "louis.freboeuf@gmail.com"},
+]
+keywords = ["circularity", "LCA", "life cycle assessment", "brightway2", "ISO 59020", "circular economy"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "numpy>=1.21",
+    "pandas>=1.5",
+    "matplotlib>=3.5",
+    "lxml>=4.9",
+    "stats_arrays>=0.9",
+    "bw2data>=4.0",
+    "bw2calc>=2.0",
+    "bw2io>=0.8",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "mypy",
+    "build",
+    "twine",
+]
+
+[project.urls]
+Homepage = "https://github.com/LouisFreboeuf/circularity_lci"
+Repository = "https://github.com/LouisFreboeuf/circularity_lci"
+Issues = "https://github.com/LouisFreboeuf/circularity_lci/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["circularitylci*", "circularity_lci*"]
+
+[tool.setuptools.package-data]
+circularity_lci = ["data/*.csv"]

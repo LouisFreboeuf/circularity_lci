@@ -1,0 +1,10 @@
+cff-version: 1.0.0
+title: Circularity LCI
+message: "If you use this software, please cite it."
+authors:
+  - family-names: Freboeuf
+    given-names: Louis
+    orcid: https://orcid.org/0009-0008-8343-3923
+version: 1.0.0
+date-released: 2025-09-13
+repository-code: https://github.com/LouisFreboeuf/circularity_lci
