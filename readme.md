@@ -6,6 +6,10 @@ It provides tools for analyzing burden-free activities, duplicating technosphere
 
 ## Installation
 
+The package is published on PyPI as [`circularitylci`](https://pypi.org/project/circularitylci/)
+— this repository is its source code, and every release is built and uploaded
+from here via GitHub Actions (Trusted Publishing).
+
 ```bash
 pip install circularitylci
 ```

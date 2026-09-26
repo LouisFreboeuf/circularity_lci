@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "circularitylci"
-version = "1.0.0"
+version = "1.0.1"
 description = "A Python package for circularity and life cycle assessment (LCA) analysis built on Brightway2"
 readme = "readme.md"
 requires-python = ">=3.9"
@@ -41,6 +41,9 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest",
+    "nbformat",
+    "nbclient",
+    "ipykernel",
     "black",
     "mypy",
     "build",
@@ -48,9 +51,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/LouisFreboeuf/circularity_lci"
-Repository = "https://github.com/LouisFreboeuf/circularity_lci"
-Issues = "https://github.com/LouisFreboeuf/circularity_lci/issues"
+Homepage = "https://github.com/LouisFreboeuf/circularityLCI"
+Repository = "https://github.com/LouisFreboeuf/circularityLCI"
+Issues = "https://github.com/LouisFreboeuf/circularityLCI/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
