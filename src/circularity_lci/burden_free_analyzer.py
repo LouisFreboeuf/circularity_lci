@@ -16,7 +16,6 @@ import bw2io as bi # type: ignore
 import bw2data as bd # type: ignore
 
 # package relative import
-from .functions_bafu_from_sacchi import import_bafu_from_sacchi
 from ._packaging import get_data_path
 
 class BurdenFreeAnalyzer:
@@ -51,14 +50,6 @@ class BurdenFreeAnalyzer:
                 username = os.getenv("EI_USERNAME")
                 password = os.getenv("EI_PASSWORD")
                 bi.import_ecoinvent_release(self.database_version, self.database_systemmodel, username, password) # change the version, and system model
-            
-            elif self.database_provider == "bafu":
-                logging.info("Importing BAFU via sacchi...")
-                import_bafu_from_sacchi(
-                    self.ecospold_folder,
-                    mapping_csv = get_data_path("elementary_flows_mapping.csv"),
-                    db_name = self.technosphere_db_name
-                )
         self.setup_complete = True
 
     def save_results(self, filename=None):

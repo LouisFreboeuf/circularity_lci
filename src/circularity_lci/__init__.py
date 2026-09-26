@@ -15,8 +15,6 @@ from .multi_lca_calculator import MultiLCACalculator
 from .circularity_database_analyzer import CircularityDatabaseAnalyzer
 from .lcia import LCIAMethodBuilder, create_circularity_lcia_methods
 from .progress_tracker import ProgressTracker
-#  import_bafu_from_sacchi is a top-level function in functions_bafu_from_sacchi.py
-from .functions_bafu_from_sacchi import import_bafu_from_sacchi
 
 # Lowercase aliases for desired usage pattern
 burdenfreeanalyzer = BurdenFreeAnalyzer
@@ -36,7 +34,6 @@ __all__ = [
     "LCIAMethodBuilder",
     "create_circularity_lcia_methods",
     "ProgressTracker",
-    "import_bafu_from_sacchi",
     "burdenfreeanalyzer",
     "biosphereflowmanager", 
     "circularitycalculator",
